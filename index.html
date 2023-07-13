@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>SampleSite</title>
+
+  <script>
+    $(document).ready(function(){
+      $(".slider").bxSlider({
+        slideWidth: 400,
+        captions: true,
+        mode: 'fade',
+      }
+      );
+    });
+  </script>
+
+</head>
+
+<body>
+
+  <div id="wrap">
+
+    <header>
+      <h1>Portfolio</h1>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="#HOME">HOME</a></li>
+          <li><a href="#ABOUT">ABOUT</a></li>
+          <li><a href="#WORKS">WORKS</a></li>
+          <li><a href="#CONTACT">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="HOME">
+      <h1>HOME</h1>
+
+      <div class="slider">
+        <div><img src="images/trip1.jpg" title="tokyo midtown"></div>
+        <div><img src="images/trip2.jpg" title="aqua city odaiba"></div>
+        <div><img src="images/trip3.JPG" title="shiba park"></div>
+        <div><img src="images/trip4.JPG" title="kt zeep yokohama"></div>
+        <div><img src="images/trip5.jpg" title="guang"></div>
+      </div>
+    </section>
+
+    <section id="ABOUT">
+      <h1>ABOUT</h1>
+      <div class="box"> 
+        <div class="circle">
+          <img src="images/sakura.jpg" alt="桜">
+        </div>
+      <div class="text">
+        <p>
+          &nbsp;福岡県出身 19歳 
+          <br>&emsp;&emsp;&ensp;&ensp;Hobby :&emsp;音楽を聴くこと ドラマを観ること
+          <br>&nbsp;Favorite :&emsp;IZ*ONE  YENA  (G)I-DLEなど
+        </p>
+      </div>
+    
+    </div>
+    </main> 
+    </section>
+
+    <section id="WORKS">
+      <h1>WORKS</h1>
+      <ul class="image">
+        <li><img
+        src="images/tulip.jpg" alt="チューリップ"></li>
+        <li><img
+        src="images/tramp.PNG" alt="トランプ"></li>
+        <li><img
+        src="images/dot1.png" alt="点1"></li>
+        <li><img
+        src="images/dot2.png" alt="点2"></li>
+        <li><img
+        src="images/snowtown.png" alt="スノータウン"></li>
+        <li><img
+        src="images/illumination.JPG" alt="イルミネーション"></li>
+        </ul>
+      <p>
+      </p>
+      <p><a href="#">↑TOP</a></p>
+    </section>
+
+    <section id="CONTACT">
+      <h1>CONTACT</h1>
+      <form action="">
+        <table class="contact-table">
+            <tr>
+                <th class="contact-item">名前</th>
+                <td class="contact-body">
+                    <input type="text" name="名前" class="form-text" />
+                </td>
+            </tr>
+            <tr>
+                <th class="contact-item">メール</th>
+                <td class="contact-body">
+                    <input type="email" name="メール" class="form-text" />
+                </td>
+            </tr>
+            <tr>
+                <th class="contact-item">メッセージ</th>
+                <td class="contact-body">
+                    <textarea name="問い合わせ" class="form-textarea"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <input class="contact-submit" type="submit" value="送信" />
+    </form>
+</div>
+</body>
+      <p><a href="#">↑TOP</a></p>
+    </section>
+
+    <footer>
+      &copy; 
+      <a href="https://www.instagram.com/iz_2o24y/" target="_blank">My Instagram</a>
+    </footer>
+    <a href="#" class="pagetop">▲</a>
+  </div>
+
+</body>
+
+</html>
