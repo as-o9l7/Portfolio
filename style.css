@@ -151,7 +151,7 @@ ul {
 }
 
 .form-textarea {
-  width:  300%;
+  width:  225%;
   padding: 10px;
   height: 100px;
   border-radius: 5px;
@@ -197,4 +197,35 @@ a.pagetop {
   position: fixed;
   bottom: 20px;
   right: 20px;
+}
+
+/*タブレット用*/
+@media all and (max-width: 1024px) {
+  #wrap {
+    width: 100%;
+  }
+}
+
+/*スマホ用*/
+@media all and (max-width: 599px) {
+  .main-menu ul {
+    display: block;
+  }
+
+  .main-menu ul li {
+    text-align: center;
+  }
+
+  main {
+    display: block;
+    flex-direction: unset;
+  }
+
+  .sub-menu ul li {
+    text-align: center;
+  }
+}
+
+.text {
+  text-align: start;
 }
